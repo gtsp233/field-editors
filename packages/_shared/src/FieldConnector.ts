@@ -57,6 +57,7 @@ export class FieldConnector<ValueType> extends React.Component<
   constructor(props: FieldConnectorProps<ValueType>) {
     super(props);
     const initialValue = props.field.getValue();
+
     this.state = {
       isLocalValueChange: false,
       externalReset: 0,
